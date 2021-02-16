@@ -47,7 +47,7 @@ type ORTBBid struct {
 	ImageURL          string                  `json:"iurl,omitempty"`           // URL without cache-busting to an image that is representative of the content of the campaign for ad quality/safety checking.
 	CampaignID        string                  `json:"cid,omitempty"`            // Campaign ID to assist with ad quality checking; the collection of creatives for which iurl should be representative.
 	CreativeID        string                  `json:"crid,omitempty"`           // Creative ID to assist with ad quality checking.
-	TacticID          string                  `json:",omitempty"`               // Tactic ID to enable buyers to label bids for reporting to the exchange the tactic through which their bid was submitted. The specific usage and meaning of the tactic ID should be communicated between buyer and exchanges a priori.
+	TacticID          string                  `json:"tactic,omitempty"`         // Tactic ID to enable buyers to label bids for reporting to the exchange the tactic through which their bid was submitted. The specific usage and meaning of the tactic ID should be communicated between buyer and exchanges a priori.
 	ContentCategories []ORTBContentCategory   `json:"cat,omitempty"`            // IAB content categories of the creative. (OpenRTB 2.5 Table 5.1)
 	CreativeAttribues []ORTBCreativeAttribute `json:"attr,omitempty"`           // Set of attributes describing the creative. (OpenRTB 2.5 Table 5.3)
 	MarkupAPI         *ORTBAPIFramework       `json:"api,omitempty"`            // API required by the markup if applicable. (OpenRTB 2.5 Table 5.6)
