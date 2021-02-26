@@ -1,3 +1,3 @@
-module sspex-v2-pop
+module openrtb
 
 go 1.13
